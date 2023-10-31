@@ -40,8 +40,10 @@
             console.log('Received shared cookies:', event.data);
         });
 
-        requestStorageAccess();
-        window.onload = () => loadIframe();
+        window.onload = () => {
+            loadIframe();
+            setTimeout(() => getCookies(), 5000);
+        };
     </script>
 </head>
 </html>
