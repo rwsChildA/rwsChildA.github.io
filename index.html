@@ -42,15 +42,15 @@
 
         window.onload = () => {
             loadIframe();
-            setTimeout(() => getCookies(), 5000);
+            setTimeout(() => requestStorageAccess(), 5000);
 
-            const btn = document.createElement('button');
-                btn.textContent = 'Grant access';
-                btn.addEventListener('click', () => {
-                    getCookies();
-                });
-                document.body.appendChild(btn);
-            };
+            // const btn = document.createElement('button');
+            //     btn.textContent = 'Grant access';
+            //     btn.addEventListener('click', () => {
+            //         getCookies();
+            //     });
+            //     document.body.appendChild(btn);
+            // };
     </script>
 </head>
 </html>
